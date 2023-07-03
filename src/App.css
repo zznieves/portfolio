@@ -7,11 +7,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +20,119 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+* {
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flexbox-container {
+
+  display: flex;
+}
+
+.homePage {
+
+  flex-direction: column;
+
+  flex: 1 0 0;
+}
+
+.header {
+
+  border: 3px solid pink;
+
+  width: 100%;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  flex: 1 0 0;
+
+  margin-bottom: 10%;
+}
+
+.header-navBar {
+
+  margin-right: 5%;
+}
+
+.title {
+  margin-left: 1%;
+}
+
+.header-navBar > a {
+  margin-right: 5%;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.home-content {
+
+  border: 3px solid black;
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: center;
+}
+
+
+.intro {
+
+  border: 3px solid aqua;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+
+
+
+
+#profilePic > img {
+
+  height: 100%;
+  width: 60%;
+
+  border-radius: 50%;
+
+}
+
+.tech-stack-section {
+  border: 3px solid violet;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1 0 0;
+
+}
+
+.tech-stack {
+
+  border: 3px solid red;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1 0 0;
+}
+
+.tech-stack > p {
+
+  margin-right: 1%;
+}
+
+#tS-Title {
+  margin-right: 1%;
 }
