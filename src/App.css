@@ -155,6 +155,30 @@ a {
   margin-right: 1%;
 }
 
+/* AboutPage ruleset */
+
+.aboutPage {
+
+  border: 3px solid lime;
+
+  flex-direction: row;
+  justify-content: center;
+
+  margin-top: 5%;
+
+}
+
+#aboutPic {
+  border: 5px solid black;
+
+  width: 25%;
+  margin-right: 5%;
+}
+
+.aboutText > h3 {
+  color: #00a2ed;
+}
+
 
 @media screen and (max-width: 600px) {
 
@@ -182,6 +206,22 @@ a {
   .socials {
     width: auto;
     margin: 0;
+  }
+
+
+  /* AboutPage ruleset*/
+
+  .aboutPage {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutText {
+    order: 1;
+  }
+
+  #aboutPic {
+    order: 2;
   }
 
 
