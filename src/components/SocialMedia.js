@@ -11,7 +11,7 @@ const SocialMedia = (props) => {
 
     // return a Component(HTML/JSX)
     return (
-        <div>{
+        <div className='socials'>{
             websites.map((website, index) => {
 
                 return <a 

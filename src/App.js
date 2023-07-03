@@ -18,10 +18,17 @@ function App() {
               info: 'JavaScript'
             }, 
             {
+              info: 'TypeScript'
+            },
+            {
               info: 'CSS'
             }
           ]}
         />
+      </div>
+
+      <div className='flexbox-container aboutPage'>
+        
       </div>
     </div>
   );
