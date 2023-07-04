@@ -15,7 +15,7 @@ const TechStack = (props) => {
             <div className="tech-stack">
             <strong id="tS-Title">Tech-Stack | </strong>
             {tools.map((tool, index) => {
-                return <p key={index}>{tool.info}</p>           
+                return <img key={index} src={tool.icon} alt={tool.info} />           
                 })}
             </div>
 

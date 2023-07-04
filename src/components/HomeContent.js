@@ -2,6 +2,9 @@ import React from 'react';
 import SocialMedia from './SocialMedia';
 import ProfilePic from '../assets/profilePicZ.jpg'
 
+import LinkedInIcon from '../assets/LinkedIn.png';
+import GitHubIcon from '../assets/gitHubIcon.png';
+
 
 const HomeContent = () => {
 
@@ -19,13 +22,13 @@ const HomeContent = () => {
                 websites = {[
                     {
                         name: 'LinkedIn',
-                        url: '',
-                        icon: ''
+                        url: 'https://www.linkedin.com/in/zayon-nieves-b97582165/',
+                        icon: LinkedInIcon
                     }, 
                     {
                         name: 'GitHub',
-                        url: '',
-                        icon: ''
+                        url: 'https://github.com/zznieves',
+                        icon: GitHubIcon
                     }
                 ]}
                 />

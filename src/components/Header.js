@@ -13,19 +13,15 @@ const Header = () => {
                 links = {[
                     {
                         name: 'Home',
-                        url: ''
+                        url: '#home'
                     },
                     {
                         name: 'About',
-                        url: ''
+                        url: '#about'
                     },
                     {
                         name: 'Projects',
-                        url: ''
-                    },
-                    {
-                        name: 'Contact',
-                        url: ''
+                        url: '#portfolio'
                     }
                 ]}
             />

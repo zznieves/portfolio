@@ -1,37 +1,69 @@
 import './App.css';
 import Header from './components/Header';
 import HomeContent from './components/HomeContent';
+import Portfolio from './components/Portfolio';
 import TechStack from './components/TechStack';
 import Title from './components/Title';
+import samplePic from './assets/aboutPic.jpg'
+
+import ReactIcon from './assets/reactjs.jpg'
+import JSIcon from './assets/js.jpg'
+import TSIcon from './assets/typescript.jpg'
+import HTMLIcon from './assets/html5.jpg'
+import CSSIcon from './assets/css3.jpg'
+import NodeIcon from './assets/nodejs.jpg'
+
+import CSharpIcon from './assets/cSharp.jpg'
+import GitIcon from './assets/git.jpg'
 
 function App() {
   return (
     <div className="App">
-      <div className='flexbox-container homePage'>
+      <div className='flexbox-container homePage' id='home'>
         <Header />
         <HomeContent />
         <TechStack 
           tools={[
             {
-              info: 'React'
+              info: 'React',
+              icon: ReactIcon
             }, 
             {
-              info: 'JavaScript'
+              info: 'JavaScript',
+              icon: JSIcon
             }, 
             {
-              info: 'TypeScript'
+              info: 'TypeScript',
+              icon: TSIcon
             },
             {
-              info: 'CSS'
+              info: 'HTML',
+              icon: HTMLIcon
+            },
+            {
+              info: 'CSS',
+              icon: CSSIcon
+            },
+            {
+              info: 'Node',
+              icon: NodeIcon
+            },
+            {
+              info: 'C#',
+              icon: CSharpIcon
+            },
+            {
+              info: 'Git',
+              icon: GitIcon
             }
           ]}
         />
       </div>
 
-      <div className='flexbox-container aboutPage'>
+      <div className='flexbox-container aboutPage' id='about'>
 
         <div id='aboutPic'>
-          <p>*insert image here</p>
+          <img src={samplePic} alt='' width='100%' height='100%' />
         </div>
 
         <div className='aboutText'>
@@ -50,6 +82,14 @@ function App() {
 
 
       </div>
+
+      <div className='flexbox-container projectsPage' id='portfolio'>
+        <Title text='Portfolio' />
+        <h4>Check out some of my projects.</h4>
+
+        <Portfolio />
+      </div>
+
     </div>
   );
 }

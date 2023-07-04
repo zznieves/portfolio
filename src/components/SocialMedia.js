@@ -20,8 +20,7 @@ const SocialMedia = (props) => {
                         target='_blank'
                         rel='noreferrer'
                         >
-                        <img src={website.icon} />
-                        {website.name}
+                        <img src={website.icon} height='85%' />
                         </a>
             })
         }</div>
