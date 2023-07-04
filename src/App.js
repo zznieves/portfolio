@@ -12,9 +12,7 @@ import TSIcon from './assets/typescript.jpg'
 import HTMLIcon from './assets/html5.jpg'
 import CSSIcon from './assets/css3.jpg'
 import NodeIcon from './assets/nodejs.jpg'
-
 import CSharpIcon from './assets/cSharp.jpg'
-import GitIcon from './assets/git.jpg'
 
 function App() {
   return (
@@ -51,10 +49,6 @@ function App() {
             {
               info: 'C#',
               icon: CSharpIcon
-            },
-            {
-              info: 'Git',
-              icon: GitIcon
             }
           ]}
         />
@@ -63,7 +57,7 @@ function App() {
       <div className='flexbox-container aboutPage' id='about'>
 
         <div id='aboutPic'>
-          <img src={samplePic} alt='' width='100%' height='100%' />
+          <img src={samplePic} alt='samplePic' width='100%' height='100%' />
         </div>
 
         <div className='aboutText'>

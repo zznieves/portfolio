@@ -1,6 +1,9 @@
 import React from 'react';
 import ProjectLinks from './ProjectLinks.js'
 
+import PortfolioProj from '../assets/portfolioSnip.png';
+import TodoSnip from '../assets/todoList.png';
+
 
 const Portfolio = () => {
 
@@ -8,13 +11,17 @@ const Portfolio = () => {
     let projects = [
         {
             name: 'Portfolio Website',
-            img: '',
-            info: 'The website you are currently viewing.'
+            img: PortfolioProj,
+            info: 'The website you are currently viewing.',
+            url: '',
+            gitHub: 'https://github.com/zznieves/portfolio-2.0'
         }, 
         {
             name: 'ToDo List',
-            img: '',
-            info: 'A web-app for creating a list of tasks.'
+            img: TodoSnip,
+            info: 'A web-app for creating a list of tasks.',
+            url: 'https://zn-todo-list.netlify.app/',
+            gitHub: 'https://github.com/zznieves/todo-list'
         }
     ];
 
@@ -34,9 +41,8 @@ const Portfolio = () => {
                             <p>
                                 {project.info}
                             </p>
-                            <ProjectLinks />
+                            <ProjectLinks ghURL={project.gitHub} demoURL={project.url} />
                         </div>
-                        
                     </div>
                 );
             })}

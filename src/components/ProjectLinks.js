@@ -12,12 +12,12 @@ const ProjectLinks = (props) => {
     return (
         <div className="projectLinks">
 
-            <a href={ghURL}>
+            <a href={ghURL} target="_blank" rel="noreferrer">
                 <img src={ghICon} alt="" />
             </a>
 
-            <a href={demoURL}>
-                Live Demo <img src='' alt="" />
+            <a href={demoURL} target="_blank" rel="noreferrer">
+                Live Demo
             </a>
             
         </div>
