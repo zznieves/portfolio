@@ -36,7 +36,7 @@ const HomeContent = () => {
             </div>
 
             <div id='profilePic'>
-                <img src={ProfilePic} />
+                <img src={ProfilePic} alt='' />
             </div>
         </div>
     );
