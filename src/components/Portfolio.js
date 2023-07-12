@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectLinks from './ProjectLinks.js'
 
 import PortfolioProj from '../assets/portfolioSnip.png';
+import BiteMeBurgers from '../assets/biteMeBurgersSnip.png';
 import TodoSnip from '../assets/todoList.png';
 
 
@@ -17,12 +18,20 @@ const Portfolio = () => {
             gitHub: 'https://github.com/zznieves/portfolio-2.0'
         }, 
         {
+            name: 'Ecommerce Website (Burger Restaurant)',
+            img: BiteMeBurgers,
+            info: 'Concept ecommerce website',
+            url: 'https://bitemeburgers.netlify.app/',
+            gitHub: 'https://github.com/zznieves/e-commerce-website'
+        },
+        {
             name: 'ToDo List',
             img: TodoSnip,
             info: 'A web-app for creating a list of tasks.',
             url: 'https://zn-todo-list.netlify.app/',
             gitHub: 'https://github.com/zznieves/todo-list'
         }
+
     ];
 
 
