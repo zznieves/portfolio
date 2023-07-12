@@ -183,6 +183,12 @@ a {
 
 /* PortfolioPage ruleset */
 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .projectsPage {
   flex-direction: column;
   justify-content: center;
@@ -208,6 +214,10 @@ h4 {
   justify-content: center;
 
   margin-bottom: 5%;
+
+  width: 85%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .project-info {
@@ -269,6 +279,10 @@ h4 {
 
   .tech-stack > img {
     width: 12%;
+  }
+
+  #tS-Title {
+    display: none;
   }
 
 
